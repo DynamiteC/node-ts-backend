@@ -1,0 +1,43 @@
+{
+  "name": "payment-service",
+  "version": "1.0.0",
+  "description": "CricHeroes Payment Microservice",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "biome check src",
+    "lint:fix": "biome check --write src",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/helmet": "^13.0.0",
+    "@fastify/rate-limit": "^10.2.1",
+    "@fastify/swagger": "^9.4.0",
+    "@fastify/swagger-ui": "^5.2.0",
+    "@types/hpp": "^0.2.7",
+    "bullmq": "^5.34.4",
+    "fastify": "^5.2.0",
+    "fastify-plugin": "^5.1.0",
+    "fastify-type-provider-zod": "^4.0.2",
+    "hpp": "^0.2.3",
+    "ioredis": "^5.4.1",
+    "opossum": "^8.3.0",
+    "pino": "^9.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.2",
+    "@types/opossum": "^8.1.9",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

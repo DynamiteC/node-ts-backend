@@ -1,0 +1,4 @@
+{
+  "createPaymentIntent": "INSERT INTO payments (amount, currency, status) VALUES (:amount, :currency, 'pending') RETURNING id",
+  "getPayment": "SELECT * FROM payments WHERE id = :id"
+}
