@@ -5,9 +5,9 @@ import fastifySwagger from '@fastify/swagger';
 import fastifySwaggerUi from '@fastify/swagger-ui';
 import Fastify from 'fastify';
 import {
-  type ZodTypeProvider,
   serializerCompiler,
   validatorCompiler,
+  type ZodTypeProvider,
 } from 'fastify-type-provider-zod';
 import { closeQueues } from './common/queue.js';
 import { env } from './env.js';

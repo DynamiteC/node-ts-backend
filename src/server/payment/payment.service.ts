@@ -9,6 +9,7 @@ const redis = new Redis({
   host: env.REDIS_HOST,
   port: env.REDIS_PORT,
   lazyConnect: true, // Don't connect immediately during build/test if not needed
+  enableAutoPipelining: true,
 });
 
 // Circuit Breaker Options: 50% error or >800ms -> open circuit -> exponential backoff 30s-5min
