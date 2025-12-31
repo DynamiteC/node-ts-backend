@@ -1,5 +1,42 @@
 # Workspace Rules
 
+## Architecture & Engineering Standards (Ruthless Top-1% Mode)
+
+### 1. Layers are Sacred (One-Way Dependency)
+- **Flow:** `common` → `infra` → `domain` → `http`
+- **Strict Rule:** `Domain` MUST NEVER import anything from `http/`.
+- **Infra:** Returns raw data only. No business decisions in infra.
+- **Dependency Injection:** Use strict injection for all external dependencies.
+
+### 2. Money Safety
+- **Type:** Monetary values MUST ALWAYS be `{ currency: string, amount: string }` or `BigInt`.
+- **Forbidden:** NEVER use `number` or `float` for money.
+- **Idempotency:** `IdempotencyKey` (UUID v7) is MANDATORY on every write operation.
+
+### 3. Security Baseline
+- **Headers:** `@fastify/helmet` with strict CSP + HSTS.
+- **Rate Limiting:** `@fastify/rate-limit` on all public routes.
+- **Validation:** Zod validation everywhere (Inputs, Env, Domain Objects).
+- **Logs:** No PII/tokens in logs (configure Pino redaction).
+
+### 4. Resilience Patterns
+- **Timeouts:** Every external call MUST have a configurable timeout.
+- **Location:** Resilience utilities live in `src/shared/`.
+- **Configuration:** ALL resilience features must be controlled via ENV flags (prefix `RESILIENCE_`).
+  - Example: `RESILIENCE_TIMEOUT_RAZORPAY_MS`, `RESILIENCE_CIRCUIT_NOTIFICATION=true`.
+- **Implementation:** Follow existing `circuit-breaker.ts` style.
+
+### 5. Observability
+- **Logging:** Structured Pino + Correlation-ID / Request-ID.
+- **Tracing:** Trace/Span propagation on all calls.
+- **Endpoints:** `/health`, `/ready`, `/metrics` must exist.
+
+### 6. Feature Toggles
+- **Rule:** NEVER hard-code behavior.
+- **Env:** Use `FEATURE_` env vars for anything that can be disabled.
+
+---
+
 ## Resilience Patterns — Implementation & Configuration Rules
 
 When adding or suggesting new resilience patterns (circuit-breaker, retry, timeout, bulkhead, rate-limiter, etc.):
