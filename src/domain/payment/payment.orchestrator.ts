@@ -1,3 +1,4 @@
+import { FastifyBaseLogger } from 'fastify';
 import { Money } from '../../common/money.js';
 import { Logger } from '../../infra/logger.js';
 
@@ -16,7 +17,7 @@ export interface PaymentResult {
 }
 
 export interface PaymentContext {
-  logger: Logger;
+  logger: Logger | FastifyBaseLogger;
 }
 
 export class PaymentOrchestrator {

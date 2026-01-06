@@ -18,7 +18,7 @@ export async function paymentRoutes(fastify: FastifyInstance) {
 
   fastify.post('/payments', {
     schema: {
-      body: zodToJsonSchema(initiatePaymentSchema),
+      body: zodToJsonSchema(initiatePaymentSchema) as unknown as Record<string, unknown>,
       headers: {
         type: 'object',
         properties: {
