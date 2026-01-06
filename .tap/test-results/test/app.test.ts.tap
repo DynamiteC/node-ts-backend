@@ -1,0 +1,70 @@
+TAP version 14
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+# Subtest: App Security & Health
+    # Subtest: Health Check
+        ok 1 - should be equal
+        ok 2 - should be equal
+        1..2
+    ok 1 - Health Check # time=67.863ms
+
+    # Subtest: Security Headers (Helmet)
+        ok 1 - should be equal
+        ok 2 - CSP header should exist
+        ok 3 - should match pattern
+        ok 4 - should match pattern
+        1..4
+    ok 2 - Security Headers (Helmet) # time=4.3ms
+
+    # Subtest: Rate Limiting
+        ok 1 - Rate limit limit header should exist
+        ok 2 - Rate limit remaining header should exist
+        ok 3 - Rate limit reset header should exist
+        1..3
+    ok 3 - Rate Limiting # time=2.124ms
+
+    1..3
+ok 1 - App Security & Health # time=142.004ms
+
+[21:13:39 UTC] INFO: incoming request
+    reqId: "req-1"
+    req: {
+      "method": "GET",
+      "url": "/health",
+      "host": "localhost:80",
+      "remoteAddress": "127.0.0.1"
+    }
+[21:13:39 UTC] INFO: request completed
+    reqId: "req-1"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 9.412052999949083
+[21:13:39 UTC] INFO: incoming request
+    reqId: "req-2"
+    req: {
+      "method": "GET",
+      "url": "/health",
+      "host": "localhost:80",
+      "remoteAddress": "127.0.0.1"
+    }
+[21:13:39 UTC] INFO: request completed
+    reqId: "req-2"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.877985000028275
+[21:13:39 UTC] INFO: incoming request
+    reqId: "req-3"
+    req: {
+      "method": "GET",
+      "url": "/health",
+      "host": "localhost:80",
+      "remoteAddress": "127.0.0.1"
+    }
+[21:13:39 UTC] INFO: request completed
+    reqId: "req-3"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.6428519999608397
+1..1
