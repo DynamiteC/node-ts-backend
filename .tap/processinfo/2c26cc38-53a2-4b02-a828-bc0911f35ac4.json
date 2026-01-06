@@ -1,8 +1,8 @@
 {
-  "date": "2025-12-31T07:42:21.864Z",
+  "date": "2026-01-06T21:13:38.098Z",
   "argv": [
     "/home/jules/.nvm/versions/node/v22.21.1/bin/node",
-    "/app/test/payment.test.ts"
+    "/app/test/circuit-breaker.test.ts"
   ],
   "execArgv": [
     "--import=file:///app/node_modules/.pnpm/@tapjs+typescript@3.5.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18._82aadda76b6193b9b44b6ff0713806e9/node_modules/@tapjs/typescript/dist/esm/import.mjs",
@@ -12,12 +12,12 @@
   ],
   "NODE_OPTIONS": "\"--import=file:///app/node_modules/.pnpm/@tapjs+processinfo@3.1.9/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
   "cwd": "/app",
-  "pid": 6178,
-  "ppid": 6156,
+  "pid": 12788,
+  "ppid": 12744,
   "parent": null,
-  "uuid": "9132450f-0f4c-4542-bc4c-bd8d5b74e6c5",
+  "uuid": "2c26cc38-53a2-4b02-a828-bc0911f35ac4",
   "files": [
-    "/app/test/payment.test.ts",
+    "/app/test/circuit-breaker.test.ts",
     "/app/node_modules/.pnpm/@tapjs+typescript@3.5.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18._82aadda76b6193b9b44b6ff0713806e9/node_modules/@tapjs/typescript/dist/esm/import.mjs",
     "/app/node_modules/.pnpm/@isaacs+ts-node-temp-fork-for-pr-2009@10.9.7_@types+node@25.0.3_typescript@5.9.3/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
     "/app/node_modules/.pnpm/@isaacs+ts-node-temp-fork-for-pr-2009@10.9.7_@types+node@25.0.3_typescript@5.9.3/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import-loader.mjs",
@@ -30,18 +30,17 @@
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/munge-mocks.js",
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/resolve-mock-entry-point.js",
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/service-key.js",
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-all-conditional-values.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-all-conditions.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-unique-condition-sets.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-all-exports.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js",
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/call-site-like.js",
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/require-resolve.js",
+    "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/is-windows.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-conditional-value.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-import.js",
-    "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/is-windows.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-conditional-values-list.js",
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/parse.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/errors.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-named-exports-list.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/read-pkg.js",
@@ -51,6 +50,7 @@
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/file-exists.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/find-dep-package.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/to-file-url.js",
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/parse.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-dependency-export.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-package-import.js",
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/read-json.js",
@@ -61,24 +61,23 @@
     "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/glob.js",
     "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/has-magic.js",
     "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/ignore.js",
+    "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/dist/esm/index.js",
+    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/pattern.js",
+    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/walker.js",
     "/app/node_modules/.pnpm/@isaacs+brace-expansion@5.0.0/node_modules/@isaacs/brace-expansion/dist/esm/index.js",
     "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/assert-valid-pattern.js",
     "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/ast.js",
     "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/escape.js",
     "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/unescape.js",
-    "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/dist/esm/index.js",
-    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/pattern.js",
-    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/walker.js",
-    "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/brace-expressions.js",
-    "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/dist/esm/index.js",
     "/app/node_modules/.pnpm/lru-cache@11.2.4/node_modules/lru-cache/dist/esm/index.js",
-    "/app/node_modules/.pnpm/minipass@7.1.2/node_modules/minipass/dist/esm/index.js",
     "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/processor.js",
+    "/app/node_modules/.pnpm/minipass@7.1.2/node_modules/minipass/dist/esm/index.js",
+    "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/dist/esm/index.js",
+    "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/brace-expressions.js",
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/loader.mjs",
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/hooks.mjs",
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/mock-service-client.js",
-    "/app/src/domain/payment/payment.orchestrator.ts",
-    "/app/src/common/money.ts"
+    "/app/src/shared/circuit-breaker.ts"
   ],
   "sources": {
     "/app/node_modules/.pnpm/@tapjs+typescript@3.5.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18._82aadda76b6193b9b44b6ff0713806e9/node_modules/@tapjs/typescript/dist/esm/import.mjs": [
@@ -111,12 +110,6 @@
     "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/dist/esm/service-key.js": [
       "/app/node_modules/.pnpm/@tapjs+mock@4.3.0_@tapjs+core@4.4.0_@types+node@25.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1_/node_modules/@tapjs/mock/src/service-key.ts"
     ],
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
-      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/call-site-like.ts"
-    ],
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
-      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/require-resolve.ts"
-    ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-all-conditional-values.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/get-all-conditional-values.ts"
     ],
@@ -132,20 +125,23 @@
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-all-local-imports.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/resolve-all-local-imports.ts"
     ],
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/call-site-like.js": [
+      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/call-site-like.ts"
+    ],
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/require-resolve.js": [
+      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/require-resolve.ts"
+    ],
+    "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/is-windows.js": [
+      "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/is-windows.ts"
+    ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-conditional-value.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/resolve-conditional-value.ts"
     ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-import.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/resolve-import.ts"
     ],
-    "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/is-windows.js": [
-      "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/is-windows.ts"
-    ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/get-conditional-values-list.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/get-conditional-values-list.ts"
-    ],
-    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/parse.js": [
-      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/parse.ts"
     ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/errors.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/errors.ts"
@@ -173,6 +169,9 @@
     ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/to-file-url.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/to-file-url.ts"
+    ],
+    "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/dist/esm/parse.js": [
+      "/app/node_modules/.pnpm/@tapjs+stack@4.3.0/node_modules/@tapjs/stack/src/parse.ts"
     ],
     "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/dist/esm/resolve-dependency-export.js": [
       "/app/node_modules/.pnpm/resolve-import@2.1.1/node_modules/resolve-import/src/resolve-dependency-export.ts"
@@ -204,6 +203,15 @@
     "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/ignore.js": [
       "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/ignore.ts"
     ],
+    "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/dist/esm/index.js": [
+      "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/src/index.ts"
+    ],
+    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/pattern.js": [
+      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/pattern.ts"
+    ],
+    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/walker.js": [
+      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/walker.ts"
+    ],
     "/app/node_modules/.pnpm/@isaacs+brace-expansion@5.0.0/node_modules/@isaacs/brace-expansion/dist/esm/index.js": [
       "/app/node_modules/.pnpm/@isaacs+brace-expansion@5.0.0/node_modules/@isaacs/brace-expansion/src/index.ts"
     ],
@@ -219,34 +227,25 @@
     "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/unescape.js": [
       "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/src/unescape.ts"
     ],
-    "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/dist/esm/index.js": [
-      "/app/node_modules/.pnpm/path-scurry@2.0.1/node_modules/path-scurry/src/index.ts"
-    ],
-    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/pattern.js": [
-      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/pattern.ts"
-    ],
-    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/walker.js": [
-      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/walker.ts"
-    ],
-    "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/brace-expressions.js": [
-      "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/src/brace-expressions.ts"
-    ],
-    "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/dist/esm/index.js": [
-      "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/src/index.ts"
-    ],
     "/app/node_modules/.pnpm/lru-cache@11.2.4/node_modules/lru-cache/dist/esm/index.js": [
       "/app/node_modules/.pnpm/lru-cache@11.2.4/node_modules/lru-cache/src/index.ts"
+    ],
+    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/processor.js": [
+      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/processor.ts"
     ],
     "/app/node_modules/.pnpm/minipass@7.1.2/node_modules/minipass/dist/esm/index.js": [
       "/app/node_modules/.pnpm/minipass@7.1.2/node_modules/minipass/src/index.ts"
     ],
-    "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/dist/esm/processor.js": [
-      "/app/node_modules/.pnpm/glob@13.0.0/node_modules/glob/src/processor.ts"
+    "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/dist/esm/index.js": [
+      "/app/node_modules/.pnpm/@isaacs+balanced-match@4.0.1/node_modules/@isaacs/balanced-match/src/index.ts"
+    ],
+    "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/dist/esm/brace-expressions.js": [
+      "/app/node_modules/.pnpm/minimatch@10.1.1/node_modules/minimatch/src/brace-expressions.ts"
     ]
   },
-  "root": "9132450f-0f4c-4542-bc4c-bd8d5b74e6c5",
-  "externalID": "test/payment.test.ts",
+  "root": "2c26cc38-53a2-4b02-a828-bc0911f35ac4",
+  "externalID": "test/circuit-breaker.test.ts",
   "code": 0,
   "signal": null,
-  "runtime": 1368.362438
+  "runtime": 1600.233525
 }
