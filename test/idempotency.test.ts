@@ -1,5 +1,14 @@
 import t from 'tap';
-import { isValidIdempotencyKey } from '../src/shared/idempotency';
+import { isValidIdempotencyKey, generateIdempotencyKey } from '../src/shared/idempotency';
+
+t.test('Idempotency Key Generation', (t) => {
+  t.test('should generate a valid UUID v7', (t) => {
+    const key = generateIdempotencyKey();
+    t.ok(isValidIdempotencyKey(key), 'Generated key should be valid');
+    t.end();
+  });
+  t.end();
+});
 
 t.test('Idempotency Key Validation', (t) => {
   t.test('should return true for valid UUID v7', (t) => {

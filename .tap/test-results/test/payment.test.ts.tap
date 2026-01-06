@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: Payment Orchestrator - Business Logic
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - Payment Orchestrator - Business Logic # time=11.54ms
+
+# Subtest: Payment Orchestrator - Invalid Amount
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 2 - Payment Orchestrator - Invalid Amount # time=1.722ms
+
+1..2

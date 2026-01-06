@@ -1,0 +1,35 @@
+TAP version 14
+# Subtest: Idempotency Key Generation
+    # Subtest: should generate a valid UUID v7
+        ok 1 - Generated key should be valid
+        1..1
+    ok 1 - should generate a valid UUID v7 # time=11.479ms
+
+    1..1
+ok 1 - Idempotency Key Generation # time=54.693ms
+
+# Subtest: Idempotency Key Validation
+    # Subtest: should return true for valid UUID v7
+        ok 1 - Should be valid
+        1..1
+    ok 1 - should return true for valid UUID v7 # time=36.035ms
+
+    # Subtest: should return false for invalid UUID
+        ok 1 - Should be invalid
+        1..1
+    ok 2 - should return false for invalid UUID # time=0.907ms
+
+    # Subtest: should return false for empty string
+        ok 1 - Should be invalid
+        1..1
+    ok 3 - should return false for empty string # time=0.662ms
+
+    # Subtest: should return false for UUID v4 (regex expects v7)
+        ok 1 - UUID v4 should fail if strict v7 check is applied
+        1..1
+    ok 4 - should return false for UUID v4 (regex expects v7) # time=0.784ms
+
+    1..4
+ok 2 - Idempotency Key Validation # time=49.171ms
+
+1..2

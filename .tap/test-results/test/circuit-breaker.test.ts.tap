@@ -1,0 +1,20 @@
+TAP version 14
+# Subtest: Circuit Breaker Configuration
+    ok 1 - Should read timeout from env
+    ok 2 - Should read error threshold from env
+    ok 3 - Should be enabled
+    ok 4 - Should be disabled via env var
+    1..4
+ok 1 - Circuit Breaker Configuration # time=21.335ms
+
+# Subtest: Circuit Breaker Safe Parsing
+    ok 1 - Should default to 10000 on invalid int
+    1..1
+ok 2 - Circuit Breaker Safe Parsing # time=2.908ms
+
+# Subtest: Circuit Breaker Behavior
+    ok 1 - Should pass through execution
+    1..1
+ok 3 - Circuit Breaker Behavior # time=7.191ms
+
+1..3
