@@ -16,10 +16,12 @@ export const generateIdempotencyKey = (): string => {
   return uuidv7();
 };
 
+const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
 /**
  * Validates format of an idempotency key (basic UUID check for now)
+ * Optimized: Regex is defined at module scope to avoid recompilation on every call.
  */
 export const isValidIdempotencyKey = (key: string): boolean => {
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   return uuidRegex.test(key);
 };
